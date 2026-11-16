@@ -1,0 +1,59 @@
+/* O body vira uma linha flexível: o menu fica à esquerda e o conteúdo à direita. */
+body {
+    display: flex;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    flex-shrink: 0;
+    width: 200px;
+    padding: 1rem;
+    background-color: #2c3e50;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav a {
+    display: block;
+    padding: 0.5rem;
+    color: #ffffff;
+}
+
+main {
+    flex: 1;
+    padding: 1rem 2rem;
+}
+
+label { 
+    display: block; 
+    font-weight: bold; 
+}
+
+input, select { 
+    width: 300px; 
+    max-width: 100%; 
+}
+
+table { 
+    border-collapse: collapse; 
+}
+
+th, td { 
+    padding: 0.5rem; 
+    border: 1px solid #cccccc; 
+    text-align: left; 
+}
+
+.erros { 
+    color: #b00020; 
+}
+
+.sucesso { 
+    color: #1b7f3b; 
+}
